@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+   
+
+</head>
+
+
+<body>
+
+    <div class="mid">
+        <div id="container">
+            <canvas height="550" width="550" id="myCanvas">
+             Your browser does not support the HTML5 canvas tag.
+            </canvas>
+            <div id="overlay"></div>
+           
+        </div>
+        
+    </div>
+    <style>
+            #container {
+              position: relative;
+              width:552px;
+              height:552px;
+              background-image:url(Picture2.png);
+              border-radius:10px;
+
+              -webkit-box-shadow: 0px 0px 132px 31px rgba(0,0,0,0.75);
+              -moz-box-shadow: 0px 0px 132px 31px rgba(0,0,0,0.75);
+              box-shadow: 0px 0px 132px 31px rgba(0,0,0,0.75);
+              margin: auto;
+              margin-top: 5%;
+
+            }
+            #container canvas, #overlay {
+              position: absolute;
+              width:552px;
+              height:552px;
+            }
+            canvas {
+              border: 1px solid black;
+              
+              opacity: 0;
+              z-index:10;
+            
+            }
+            img{
+                margin:0;
+                position: absolute;
+            }
+
+            </style>
+
+    <script src="main.js"></script>
+
+    <br>
+
+    <div id=message_box>Welcome to Nine Men's morris
+        <p id="message"></p> 
+      <p id="notice"></p> 
+    </div>
+
+    <br>
+    <div id="help" onclick="toggle()">
+        <h3>Rules of Nine Men's Morris</h3>
+       <p>The gameplay starts with the setup phase. 
+         You get to remove an opponent's piece whenever you create a string of three pieces on one line.
+          As this rule is in effect during setup as well as regular play, you will need to be strategic from the first moment of the game.
+           You can't remove an opponent's piece that is part of a three-piece string (or mill) unless there are no other pieces of theirs to remove.
+        </p>
+        <h4>Setup Phase:</h4>
+        <p> Players taking turns laying their pieces on vacant points. You each have nine pieces, so you choose from among the 24 points on the board to place your pieces. Each player alternates placing a piece. This is where you must use strategy, seeing where your opponent is placing a piece and where it will be advantageous for you to place yours. You want to block your opponent from creating a string of three pieces on one line, or they will be able to remove one of your pieces. 
+            You are also looking for your chance to create a string of three pieces on one line.
+        </p>
+        
+    </div>
+    
+ 
+  
+  
+   
+
+</body>
+
+</html>
